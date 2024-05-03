@@ -135,14 +135,14 @@ class _detailscreenState extends State<detailscreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
               children: [
                 Container(
                   margin: EdgeInsets.only(left: 18),
-                  child: Text(
+                  child: const Text(
                     'Designed by athletes, for athletes—those\nwho know what it takes to win.Nike Air\ncushioningis a lightweight, durable and\nindustry-leading innovation that absorbs.',
                     style: TextStyle(
                         fontSize: 16,
@@ -152,7 +152,7 @@ class _detailscreenState extends State<detailscreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 91,
             ),
             GestureDetector(
@@ -186,7 +186,7 @@ class _detailscreenState extends State<detailscreen> {
                 decoration: BoxDecoration(
                   color: Colors.blue.shade300,
                 ),
-                child: Center(
+                child: const Center(
                     child: Text(
                   'Add to Cart',
                   style: TextStyle(

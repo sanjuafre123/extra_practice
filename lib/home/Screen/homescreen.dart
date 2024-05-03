@@ -17,18 +17,18 @@ class _homescreenState extends State<homescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(
+        leading: const Icon(
           Icons.menu,
           size: 20,
         ),
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Shofashion',
           style: TextStyle(color: Colors.blueAccent),
         ),
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Icon(
               Icons.notification_add,
               size: 25,
@@ -42,15 +42,15 @@ class _homescreenState extends State<homescreen> {
             Row(
               children: [
                 Container(
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   height: 175,
                   width: 330,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 1),
-                      borderRadius: BorderRadius.all(
+                      borderRadius: const BorderRadius.all(
                         Radius.circular(15),
                       ),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         fit: BoxFit.cover,
                         image: AssetImage('assets/banner_nike.jpg'),
                       )),
@@ -62,16 +62,16 @@ class _homescreenState extends State<homescreen> {
                 Row(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(left: 15, top: 10),
-                      child: Text(
+                      margin: const EdgeInsets.only(left: 15, top: 10),
+                      child: const Text(
                         'Popular Product',
                         style: TextStyle(
                             fontWeight: FontWeight.w500, fontSize: 20),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 129, top: 10),
-                      child: Text(
+                      margin: const EdgeInsets.only(left: 129, top: 10),
+                      child: const Text(
                         'View All',
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
@@ -154,11 +154,17 @@ class _homescreenState extends State<homescreen> {
               children: [
                 ...List.generate(
                   productlist.length,
-                      (index) =>
-                      homemethod(img: productlist[index]['img'],
-                        name: productlist[index]['name'],
-                        price: productlist[index]['price'],),
-
+                      (index) =>GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            selectedindex =index;
+                            Navigator.of(context).pushNamed('/detail');
+                          });
+                        },
+                        child: homemethod(img: productlist[index]['img'],
+                          name: productlist[index]['name'],
+                          price: productlist[index]['price'],),
+                      )
                 ),
               ],
             ),
@@ -259,7 +265,7 @@ class _homescreenState extends State<homescreen> {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(left: 45),
+                  margin: EdgeInsets.only(left: 75),
                   child: Icon(
                     Icons.favorite_border,
                     color: Colors.grey,
