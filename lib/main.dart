@@ -17,7 +17,7 @@ class Myapp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/' : (context) => homescreen(),
-      //   '/details' : (context) => detailscreen(),
+        '/detail' : (context) => detailscreen(),
       //   '/carts' : (context) => cartscreen(),
       },
     );
