@@ -25,7 +25,7 @@ class _CartscreenState extends State<Cartscreen> {
         height: 100,
         color: Colors.blue.shade700,
         child: Text(
-          'Ammount : $ammount',
+          'Ammount : $total',
           style: TextStyle(
               color: Colors.white, fontWeight: FontWeight.w500, fontSize: 26),
         ),
