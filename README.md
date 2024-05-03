@@ -1,16 +1,36 @@
-# extra_practice
+# Exam
 
-A new Flutter project.
+<h3 align="center"> 3.Digital Clock App Page </h3>
 
-## Getting Started
+<div align ="center">
 
-This project is a starting point for a Flutter application.
+  <img src = "https://github.com/sanjuafre123/extra_practice/assets/148860124/3e112275-d233-4621-95ca-c7c63c222467" height ="550">
+  
+</div>
 
-A few resources to get you started if this is your first Flutter project:
+<div align ="center">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  <img src = "https://github.com/sanjuafre123/extra_practice/assets/148860124/7e16e0f1-ba01-4c53-8772-71ffc7887797" height ="550">
+  
+</div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/extra_practice/assets/148860124/950ba7cd-d1d2-417f-8115-9cbd9977111b" height ="550">
+  
+</div>
+
+<h3 align="center"> Digital Clock App Page Video </h3>
+
+<div align="center">
+ <video src="https://github.com/sanjuafre123/extra_practice/assets/148860124/27fe0cdc-7dd7-4c95-840c-e093d643aa1b" type="video/mp4">
+</video>
+</div>
+
+
+
+
+
+
+
+
