@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'home/Screen/cartscreen.dart';
 import 'home/Screen/details_screen.dart';
 import 'home/Screen/homescreen.dart';
+
 
 void main() {
   runApp(const Myapp());
@@ -17,8 +17,8 @@ class Myapp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/' : (context) => homescreen(),
-      //   '/details' : (context) => detailscreen(),
-      //   '/carts' : (context) => cartscreen(),
+        '/detail' : (context) => detailscreen(),
+        // '/carts' : (context) => cartscreen(),
       },
     );
   }
